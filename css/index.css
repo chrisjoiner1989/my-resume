@@ -1,0 +1,64 @@
+@media (min-width: 768px) {
+  header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header .profile-image {
+    flex: 1;
+  }
+
+  header h1 {
+    flex: 3;
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
+
+  header .contact-info {
+    flex: 2;
+    text-align: left;
+  }
+
+  main {
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  .summary,
+  .projects,
+  .education,
+  .experience {
+    flex: 1;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills .skill-category {
+    margin-bottom: 0;
+  }
+
+  footer {
+    text-align: left;
+    padding: 1.5rem 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    justify-content: space-between;
+  }
+
+  .summary,
+  .projects,
+  .education,
+  .experience {
+    max-width: 48%;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
